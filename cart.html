@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        .grid-container {
+        background-color: rgb(138, 241, 241);
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: Arial, sans-serif;
+            border-radius: 12px;
+            
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+        }
+        .cart-item span,
+        .cart-item button,
+        .cart-item input {
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+        .cart-item input[type="number"] {
+            width: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Shopping Cart</h1>
+    <div class="grid-container">
+        <span>Product</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Total</span>
+        <ul id="cart-items">
+        </ul>
+        <span></span> <span>Grand Total:</span>
+        <span id="grand-total-price">0</span>
+        <div>
+            <p>Payment Method:</p>
+            <select id="payment-method">
+                <option  value="Mpesa">M pesa</option>
+                <option value="Airtel_money">Airtel Money</option>
+                <option value="T-kash">T-kash</option>
+            </select>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ecommerce Site</p>
+        <div class="homw">
+            <p><a href="index.html">Go back</a></p>
+        </div>
+    </footer>
+</body>
+</html>
